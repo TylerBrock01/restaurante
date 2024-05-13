@@ -1,11 +1,14 @@
 :root{
     --fuente: "Road Rage", sans-serif;
     /*colores*/
-    --negro: rgb(8,9,12, 0.5);
+    --negroTrans: rgb(8,9,12, 0.5);
+    --negro: rgb(8,9,12);
+
     --pistache: #CDFEFF;
     --amarillo: #DDE00D;
-    --purpura: rgb(110, 3, 140, 0.6);
-    --morado: rgb(241, 23, 255, 0.6);
+    --purpuraTrans: rgb(110, 3, 140, 0.6);
+    --moradoTrans: rgb(241, 23, 255, 0.6);
+    --naranja: rgba(222,108,70,255);
 }
 html{
     box-sizing: border-box;
@@ -18,13 +21,14 @@ body{
     font-size: 1.6rem;
     line-height: 2;
     background-image: url("../img/theme.jpg");
-    color: var(--amarillo);
     font-family: var(--fuente);
 }
 h1,h2,h3,h4{
     line-height: 1.2;
 }
 h1 {
+    color: var(--amarillo);
+
     font-size: 4.8rem;
 }
 h2{
@@ -36,8 +40,14 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+.subtitulo{
+}
 .encabezado{
-    background-color: var(--purpura);
+    color: var(--pistache);
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+    background-color: var(--purpuraTrans);
 }
 .menu{
     display: grid;
@@ -50,9 +60,9 @@ a{
     grid-template-columns: repeat(2, 1fr);
 }
 .navegacion{
-    background-color: var(--negro) ;
-    border: 2px solid var(--morado);
-    color: var(--amarillo);
+    background-color: var(--negroTrans) ;
+    border: 2px solid var(--moradoTrans);
+    color: var(--pistache);
     padding: 1rem 1rem;
     margin: 0.5rem;
     font-size: 2rem;
@@ -65,12 +75,12 @@ a{
 }
 .navegacion:hover{
     cursor: pointer;
-    background-color: var(--purpura);
+    background-color: var(--purpuraTrans);
     border: 2px solid var(--pistache);
 
 }
 .iconos{
-    background-color: var(--purpura);
+    background-color: var(--purpuraTrans);
     margin: auto;
     width: 13rem;
     height: 13rem;
