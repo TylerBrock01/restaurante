@@ -24,9 +24,9 @@ html{
 }
 body{
     font-size: 1.5rem;
-    line-height: 1.5;
+    line-height: 2;
     background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);
-    font-family: var(--fuente);
+    font-family: "Turret Road", sans-serif;
 }
 h1,h2,h3,h4{
     line-height: 1.2;
@@ -45,6 +45,8 @@ h4{
     font-size: 2.8rem;
 }
 .header{
+    display: flex;
+    justify-content: center;
     margin-bottom: -2rem;
 }
 .subtitulo{
@@ -83,14 +85,13 @@ h4{
     /*margin: 0 5rem;*/
 }
 .menu{
-    display: grid;
 }
 a{
     text-decoration: none;
 }
 .nav-bar{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 .navegacion{
     background-color: var(--negroTrans) ;
