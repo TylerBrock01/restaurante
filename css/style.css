@@ -64,16 +64,15 @@ p{
 }
 .encabezado{
     display: flex;
-    background-color: var(--negroTrans);
     color: var(--pistache);
-    padding-left: 1rem;
     border-bottom: 2px solid var(--rojo);
+    height: 8rem;
 }
 .barra{
-    /*background-color: var(--purpuraTrans);*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--negro);
+    margin-top: 3rem;
 }
 .navegacion{
     font-size: 3rem;
