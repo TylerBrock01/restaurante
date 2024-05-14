@@ -1,13 +1,14 @@
 :root{
-    --fuente: "Road Rage", sans-serif;
+    --fuente: "Turret Road", sans-serif;
     /*colores*/
     --negroTrans: rgb(8,9,12, 0.5);
     --negro: rgb(8,9,12);
-
-    --pistache: #CDFEFF;
+    --pistache: rgb(205, 254, 255);
     --amarillo: #DDE00D;
     --purpuraTrans: rgb(110, 3, 140, 0.6);
+    --purpura: rgb(110, 3, 140 );
     --moradoTrans: rgb(241, 23, 255, 0.6);
+    --morado: rgb(241, 23, 255);
     --naranja: rgba(222,108,70,255);
 }
 html{
@@ -42,12 +43,17 @@ h4{
 }
 .subtitulo{
 }
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
 .encabezado{
+    background-color: var(--negroTrans);
+    border: 2px solid var(--amarillo);
     color: var(--pistache);
     display: flex;
     justify-content: center;
-    margin: 0 5rem;
-    background-color: var(--purpuraTrans);
+    /*margin: 0 5rem;*/
 }
 .menu{
     display: grid;
@@ -61,7 +67,7 @@ a{
 }
 .navegacion{
     background-color: var(--negroTrans) ;
-    border: 2px solid var(--moradoTrans);
+    border: 2px solid var(--morado);
     color: var(--pistache);
     padding: 1rem 1rem;
     margin: 0.5rem;
@@ -87,6 +93,7 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 50%;
 }
 .no-margin{
     margin: 0;
