@@ -32,11 +32,10 @@ h1,h2,h3,h4,p,a{
     font-family: "Turret Road", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    color: var(--rojo);
 }
 h1 {
-    font-size: 3rem;
-    padding: 1rem;
+    color: var(--rojo);
+    font-size: 4rem;
 }
 h2{
     font-size: 3.2rem;
@@ -60,26 +59,35 @@ p{
 .header{
     background-color: var(--negroTrans);
 }
+.encabezado{
+    background-color: var(--negroTrans);
+    color: var(--pistache);
+}
 .barra{
     /*background-color: var(--purpuraTrans);*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 .navegacion{
-    background-color: var(--negroTrans);
+    background-color: var(--negro);
     font-size: 3rem;
     margin: 1rem;
     padding: 1rem;
     text-align: center;
     border: 2px solid var(--negro);
+    color: var(--blanco);
 }
 .navegacion:hover{
     border-color: var(--pistache);
     color: var(--pistache);
+    .icon{
+        stroke: var(--pistache);
+    }
 }
 .iconos{
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 1rem;
+    color: var(--pistache);
 }
