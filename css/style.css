@@ -41,6 +41,9 @@ h3{
 h4{
     font-size: 2.8rem;
 }
+.header{
+    padding: 0.5rem;
+}
 .subtitulo{
 }
 .contenedor{
@@ -68,7 +71,7 @@ a{
 .navegacion{
     background-color: var(--negroTrans) ;
     border: 2px solid var(--morado);
-    color: var(--pistache);
+    color: var(--amarillo);
     padding: 1rem 1rem;
     margin: 0.5rem;
     font-size: 2rem;
@@ -83,7 +86,6 @@ a{
     cursor: pointer;
     background-color: var(--purpuraTrans);
     border: 2px solid var(--pistache);
-
 }
 .iconos{
     background-color: var(--purpuraTrans);
