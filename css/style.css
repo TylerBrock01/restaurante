@@ -67,7 +67,6 @@ p{
 .barra{
     /*background-color: var(--purpuraTrans);*/
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
 }
 .navegacion{
     background-color: var(--negro);
