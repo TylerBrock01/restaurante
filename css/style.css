@@ -24,7 +24,7 @@ html{
 }
 body{
     font-size: 1.5rem;
-    line-height: 2;
+    line-height: 1.5;
     background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);
     background-repeat: initial;
 }
@@ -35,7 +35,7 @@ h1,h2,h3,h4,p,a{
 }
 h1 {
     color: var(--rojo);
-    font-size: 4rem;
+    font-size: 3rem;
 }
 h2{
     font-size: 3.2rem;
@@ -50,7 +50,7 @@ p{
     font-size: 1.8rem;
 }
 .contenedor{
-    max-width: 120rem;
+    width: min(90%, 120rem);
     margin: 0 auto;
 }
 .centrar-contenido{
@@ -62,6 +62,7 @@ p{
 .encabezado{
     background-color: var(--negroTrans);
     color: var(--pistache);
+    padding-left: 1rem;
 }
 .barra{
     /*background-color: var(--purpuraTrans);*/
