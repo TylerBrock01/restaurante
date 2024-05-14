@@ -69,12 +69,16 @@ p{
     border-bottom: 2px solid var(--rojo);
     height: 10rem;
 }
+.encabezado-titulo{
+    text-transform: capitalize;
+
+}
 .barra{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     background-color: var(--negro);
     margin-top: 3rem;
-    column-gap: 2rem;
+    gap: 1rem;
 }
 .navegacion{
     text-align: center;
@@ -93,7 +97,8 @@ p{
     padding: 1rem;
     height: 8rem;
     width: 8rem;
+    margin: 1rem 0 -3rem 0;
 }
 .titulo{
-    font-size: 3rem;
+    text-transform: capitalize;
 }
