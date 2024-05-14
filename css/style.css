@@ -26,7 +26,7 @@ body{
     font-size: 1.5rem;
     line-height: 2;
     background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);
-    background-repeat: no-repeat;
+    background-repeat: initial;
 }
 h1,h2,h3,h4,p,a{
     font-family: "Turret Road", sans-serif;
@@ -83,6 +83,7 @@ p{
     .icon{
         stroke: var(--pistache);
     }
+    transition: .3s ease;
 }
 .iconos{
     display: flex;
