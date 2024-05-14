@@ -49,6 +49,9 @@ a{
 p{
     font-size: 1.8rem;
 }
+.footer{
+    margin-top: 20rem;
+}
 .contenedor{
     width: min(90%, 120rem);
     margin: 0 auto;
@@ -60,16 +63,19 @@ p{
     background-color: var(--negroTrans);
 }
 .encabezado{
+    display: flex;
     background-color: var(--negroTrans);
     color: var(--pistache);
     padding-left: 1rem;
+    border-bottom: 2px solid var(--rojo);
 }
 .barra{
     /*background-color: var(--purpuraTrans);*/
     display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: var(--negro);
 }
 .navegacion{
-    background-color: var(--negro);
     font-size: 3rem;
     margin: 1rem;
     padding: 1rem;
@@ -91,4 +97,5 @@ p{
     align-items: center;
     padding: 1rem;
     color: var(--pistache);
+    height: 20rem;
 }
