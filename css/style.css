@@ -39,7 +39,6 @@ h1,h2,h3,h4,p,a{
 
 }
 h1 {
-    color: var(--rojo);
     font-size: 3.8rem;
 }
 h2{
@@ -70,8 +69,6 @@ p{
 .centrar-contenido{
     text-align: center ;
 }
-.header{
-}
 .encabezado{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
@@ -80,13 +77,12 @@ p{
     padding-bottom: 1rem;
 }
 .encabezado--contenido{
-
+    padding-left: 1rem;
 }
 .titulo{
-    font-size: 4rem;
+    font-size: 3rem;
     text-transform: capitalize;
 }
-
 .bar1{
     border: 2px solid var(--rojo);
     color: var(--rojo);
