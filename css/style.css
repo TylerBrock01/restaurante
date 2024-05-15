@@ -61,6 +61,12 @@ p{
     width: min(90%, 120rem);
     margin: 0 auto;
 }
+.no-margin{
+    margin: 0;
+}
+.no-padding{
+    padding: 0;
+}
 .centrar-contenido{
     text-align: center ;
 }
@@ -71,23 +77,26 @@ p{
     grid-template-columns: repeat(2, 1fr);
     color: var(--pistache);
     border-bottom: 2px solid var(--rojo);
-    gap: 2rem;
+    grid-gap: 1rem;
+    padding-bottom: 1rem;
 }
 .encabezado-activo{
-    grid-template-rows: repeat(2, 1fr);
 
 }
-.titulo-activo{
-    grid-row: 2/3;
-    grid-column: 1/3;
+.titulo{
+    font-size: 4rem;
 }
+
 .bar1{
     border: 2px solid var(--rojo);
     color: var(--rojo);
-    padding: 1rem;
 }
 .encabezado-titulo{
     text-transform: capitalize;
+}
+.encabezado-activo{
+    grid-row: 2/3;
+    grid-column: 1/2;
 }
 
 .barra{
