@@ -75,24 +75,21 @@ p{
 .encabezado{
     display:grid;
     grid-template-columns: repeat(2, 1fr);
-    color: var(--pistache);
     border-bottom: 2px solid var(--rojo);
     grid-gap: 1rem;
     padding-bottom: 1rem;
 }
-.encabezado-activo{
+.encabezado--contenido{
 
 }
 .titulo{
     font-size: 4rem;
+    text-transform: capitalize;
 }
 
 .bar1{
     border: 2px solid var(--rojo);
     color: var(--rojo);
-}
-.encabezado-titulo{
-    text-transform: capitalize;
 }
 .encabezado-activo{
     grid-row: 2/3;
@@ -107,10 +104,15 @@ p{
     gap: 1rem;
 }
 .navegacion{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     border: 2px solid var(--rojo);
+    height: 24rem;
 }
 .titulo-activo,
+.icon,
 .titulo:hover,
 .navegacion:hover{
     border-color: var(--pistache);
@@ -122,10 +124,6 @@ p{
 }
 .icon{
     padding: 1rem;
-    height: 8rem;
-    width: 8rem;
-    margin: 1rem 0 -3rem 0;
-}
-.titulo{
-    text-transform: capitalize;
+    height: 10rem;
+    width: 10rem;
 }
