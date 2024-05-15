@@ -29,11 +29,14 @@ body{
     /*background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);*/
     /*background-repeat: initial;*/
     background-color: var(--negro);
+
 }
 h1,h2,h3,h4,p,a{
     font-family: "Turret Road", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
+    color: var(--blanco);
+
 }
 h1 {
     color: var(--rojo);
@@ -54,10 +57,10 @@ p{
 .footer{
     margin-top: 20rem;
 }
-/*.contenedor{*/
-/*    width: min(90%, 120rem);*/
-/*    margin: 0 auto;*/
-/*}*/
+.contenedor{
+    width: min(90%, 120rem);
+    margin: 0 auto;
+}
 .centrar-contenido{
     text-align: center ;
 }
@@ -65,14 +68,18 @@ p{
 }
 .encabezado{
     display: flex;
+    justify-content: space-evenly;
     color: var(--pistache);
     border-bottom: 2px solid var(--rojo);
     height: 10rem;
 }
+.bar1{
+    color: var(--rojo);
+}
 .encabezado-titulo{
     text-transform: capitalize;
-
 }
+
 .barra{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -83,8 +90,9 @@ p{
 .navegacion{
     text-align: center;
     border: 2px solid var(--rojo);
-    color: var(--blanco);
 }
+.titulo-activo,
+.titulo:hover,
 .navegacion:hover{
     border-color: var(--pistache);
     color: var(--pistache);
