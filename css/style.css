@@ -97,6 +97,8 @@ p{
     background-color: var(--negro);
     margin-top: 3rem;
     gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
+
 }
 @media (min-width: 768px){
     .barra{
@@ -135,10 +137,7 @@ p{
 .barra--items{
     display: grid;
     background-color: var(--negro);
-    margin-top: 3rem;
-    gap: 1rem;
-    border: 2px solid var(--rojo);
-
+    border: 2px solid var(--rojo)
 }
 @media (min-width: 768px){
     .barra--items{
@@ -148,19 +147,15 @@ p{
 .campo{
 
 }
-@media (max-width: 400px ){
-    .items{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        font-family: "Turret Road", sans-serif;
-    }
-
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Turret Road", sans-serif;
 }
-.icon-tabler-burger{
-    height: 20rem;
-    width: 20rem;
+@media (max-width: 400px ){
+
 }
 .formulario{
     display: flex;
@@ -168,7 +163,6 @@ p{
     padding: 1rem;
     gap: 1rem;
     font-family: "Turret Road", sans-serif;
-    height: 40rem;
 }
 .formulario--opcion{
     background-color: var(--negro);
@@ -184,12 +178,9 @@ p{
     transition: .3s ease;
     border: 1px solid var(--pistache);
 }
-/*input{*/
-/*    height: 2rem;*/
-/*    width: 2rem;*/
-/*    border-radius: 0;*/
-/*    color: var(--pistache);*/
-/*}*/
+.nav-item{
+    padding: 1rem;
+}
 .input{
     padding: 1rem 2rem;
 }
@@ -199,14 +190,24 @@ p{
 .input[type="radio"] + label::before {
     content: "";
     margin: 1.5rem;
-    width: 20px;
-    height: 20px;
+    width: 2rem;
+    height: 2rem;
     border-radius: 0;
     gap: 1rem;
-    border: 1px solid var(--rojo);
+    border: 3px solid var(--rojo);
 }
-
 .input[type="radio"]:checked + label::before{
-    background-color: var(--pistache); /* Cambia el color de fondo cuando el input está seleccionado */
-    border: 1px solid var(--rojo);
+    background-color: var(--pistache);
+    border: 2px solid var(--rojo);
+}
+.input[type="number"]{
+    background-color: var(--negro);
+    color: var(--pistache);
+    border: 2px solid var(--pistache);
+}
+.input[type="number"]:hover{
+    background-color: var(--pistache);
+    border: 2px solid var(--rojo);
+    color: var(--negro);
+    font-weight: bold;
 }
