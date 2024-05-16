@@ -146,20 +146,67 @@ p{
     }
 }
 .campo{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-}
-.items{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 15rem;
-    font-family: "Turret Road", sans-serif;
 
 }
+@media (max-width: 400px ){
+    .items{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: "Turret Road", sans-serif;
+    }
+
+}
+.icon-tabler-burger{
+    height: 20rem;
+    width: 20rem;
+}
 .formulario{
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
+    gap: 1rem;
     font-family: "Turret Road", sans-serif;
+    height: 40rem;
+}
+.formulario--opcion{
+    background-color: var(--negro);
+    border: 1px solid var(--pistache);
+    color: var(--pistache);
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+.formulario--opcion:hover{
+    color: var(--negro);
+    background-color: var(--pistache);
+    transition: .3s ease;
+    border: 1px solid var(--pistache);
+}
+/*input{*/
+/*    height: 2rem;*/
+/*    width: 2rem;*/
+/*    border-radius: 0;*/
+/*    color: var(--pistache);*/
+/*}*/
+.input{
+    padding: 1rem 2rem;
+}
+.input[type="radio"] {
+    display: none; /* Oculta el input de tipo radio */
+}
+.input[type="radio"] + label::before {
+    content: "";
+    margin: 1.5rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 0;
+    gap: 1rem;
+    border: 1px solid var(--rojo);
+}
+
+.input[type="radio"]:checked + label::before{
+    background-color: var(--pistache); /* Cambia el color de fondo cuando el input está seleccionado */
+    border: 1px solid var(--rojo);
 }
