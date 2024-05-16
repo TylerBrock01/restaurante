@@ -94,10 +94,14 @@ p{
 
 .barra{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     background-color: var(--negro);
     margin-top: 3rem;
     gap: 1rem;
+}
+@media (min-width: 768px){
+    .barra{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 .navegacion{
     display: flex;
