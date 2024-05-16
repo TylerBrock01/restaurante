@@ -36,6 +36,7 @@ h1,h2,h3,h4,p,a{
     font-optical-sizing: auto;
     font-style: normal;
     color: var(--blanco);
+    text-transform: capitalize;
 }
 h1 {
     font-size: 3.8rem;
@@ -72,6 +73,7 @@ p{
     grid-template-columns: repeat(2, 1fr);
     border-bottom: 2px solid var(--rojo);
     grid-gap: 1rem;
+    padding-bottom: 1rem;
 }
 .encabezado--contenido{
     padding-left: 1rem;
@@ -79,7 +81,6 @@ p{
 }
 .titulo{
     font-size: 3rem;
-    text-transform: capitalize;
 }
 .bar1{
     border: 2px solid var(--rojo);
@@ -136,8 +137,9 @@ p{
 }
 .barra--items{
     display: grid;
+    margin-top: 3rem;
     background-color: var(--negro);
-    border: 2px solid var(--rojo)
+    border: 2px solid var(--pistache)
 }
 @media (min-width: 768px){
     .barra--items{
@@ -170,6 +172,7 @@ p{
     color: var(--pistache);
     display: flex;
     align-items: center;
+    justify-content: center;
     font-weight: bold;
 }
 .formulario--opcion:hover{
@@ -177,6 +180,16 @@ p{
     background-color: var(--pistache);
     transition: .3s ease;
     border: 1px solid var(--pistache);
+}
+@media (min-width: 768px ){
+    .items{
+        display: flex;
+        justify-content: end;
+    }
+    .formulario--pedido{
+        display: flex;
+        justify-content: end;
+    }
 }
 .nav-item{
     padding: 1rem;
@@ -188,8 +201,9 @@ p{
     display: none; /* Oculta el input de tipo radio */
 }
 .input[type="radio"] + label::before {
+    display: flex;
     content: "";
-    margin: 1.5rem;
+    margin-right: 1rem;
     width: 2rem;
     height: 2rem;
     border-radius: 0;

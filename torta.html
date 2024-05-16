@@ -26,7 +26,7 @@
         volver
     </a>
     <!--    pedido-->
-    <h2 class="encabezado--contenido encabezado-activo bar1 titulo titulo-activo">
+    <h2 class="no-margin encabezado--contenido encabezado-activo bar1 titulo-activo">
         orden descripcion:
     </h2>
 </section>
@@ -34,6 +34,15 @@
 <main class="contenedor">
     <nav class="barra--items">
         <!--        item-->
+        <div class="formulario">
+<!--            cancelar-->
+            <a class="formulario--opcion nav-item nav-titulo" href="index.html">
+                cancelar</a>
+            <h3 class="bar1 nav-item no-margin">
+                orden:</h3>
+            <!--        tipo-->
+            <h3 class="encabezado-activo bar1">tipo:</h3>
+        </div>
         <div class="items nav-titulo">
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-burger" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#F2163E" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -44,8 +53,9 @@
             torta
         </div>
         <form class="formulario nav-titulo">
-            <!--        tipo-->
-            <label class="nav-titulo">tipo:</label><br>
+            <!--            cantidad-->
+            <label class="nav-titulo" for="cantidad">cantidad:</label>
+            <input class="input centrar-contenido" type="number" id="cantidad" name="cantidad" value="1" min="1">
             <!--            pierna-->
             <input class="input" type="radio" id="pierna" name="tipo" value="pierna">
             <label class="formulario--opcion" for="pierna">pierna</label>
@@ -55,16 +65,13 @@
             <!--            mixta-->
             <input class="input" type="radio" id="mixta" name="tipo" value="mixta">
             <label class="formulario--opcion" for="mixta">mixta</label>
-            <!--            cantidad-->
-            <label class="nav-titulo" for="cantidad">cantidad:</label>
-            <input class="input centrar-contenido" type="number" id="cantidad" name="cantidad" value="1" min="1">
         </form>
-        <div>
-            <!--        cancelar-->
-            <a class="formulario--opcion nav-item nav-titulo" href="index.html">
-                cancelar
+        <div class="formulario formulario--pedido">
+            <!--        agregar-->
+            <a class="formulario--opcion nav-item nav-titulo" href="crear.html">
+                agregar
             </a>
-            <!--        promo-->
+            <!--        ordenar-->
             <a class="formulario--opcion nav-item nav-titulo" href="pedido.html">
                 ordenar
             </a>
