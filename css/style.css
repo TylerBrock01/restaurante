@@ -26,26 +26,30 @@ html{
 body{
     font-size: 1.5rem;
     line-height: 1.5;
+    /*background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);*/
+    /*background-repeat: initial;*/
     background-color: var(--negro);
 
 }
 h1,h2,h3,h4,p,a{
     font-family: "Turret Road", sans-serif;
     font-optical-sizing: auto;
+    font-style: normal;
     color: var(--blanco);
     text-transform: capitalize;
 }
 h1 {
-    font-size: 3.8rem;
+    font-size: 7rem;
 }
 h2{
-    font-size: 3rem;
+    font-size: 5rem;
 }
 h3{
-    font-size: 2.4rem;
+    font-size: 4rem;
 }
 a{
     text-decoration: none;
+    font-size: 4rem;
 }
 p{
     font-size: 1.8rem;
@@ -63,12 +67,163 @@ p{
     padding: 0;
 }
 .header{
-    border: solid 1px yellow;
+
 }
-    h1{
-        border: solid 1px yellow;
-    }
 .centrar-contenido{
+    text-align: center ;
+}
+.encabezado{
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-bottom: 2px solid var(--rojo);
+    grid-gap: 1rem;
+    padding-bottom: 1rem;
+}
+.encabezado--contenido{
+    padding-left: 1rem;
+    font-weight: bold;
+}
+.titulo{
+    font-size: 4rem;
+}
+.bar1{
+    border: 2px solid var(--rojo);
+    color: var(--rojo);
+}
+.encabezado-activo{
+    padding-left: 0;
+    grid-row: 2/3;
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.barra{
+    display: grid;
+    background-color: var(--negro);
+    margin-top: 3rem;
+    gap: 1rem;
+}
+@media (min-width: 768px){
+    .barra{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.navegacion{
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
+    border: 2px solid var(--rojo);
+    height: 15rem;
+}
+.nav-titulo{
+    font-size: 2.4rem;
+    text-transform: capitalize;
+    color: var(--blanco);
+}
+.titulo-activo,
+.icon,
+.titulo:hover,
+.navegacion:hover{
+    border-color: var(--pistache);
+    color: var(--pistache);
+    .icon{
+        stroke: var(--pistache);
+    }
+    transition: .3s ease;
+}
+.icon{
+    padding: 1rem;
+    height: 8rem;
+    width: 8rem;
+}
+.barra--items{
+    display: grid;
+    margin-top: 3rem;
+    background-color: var(--negro);
+    border: 2px solid var(--pistache)
+}
+@media (min-width: 768px){
+    .barra--items{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+.campo{
+
+}
+.items{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: "Turret Road", sans-serif;
+}
+@media (max-width: 400px ){
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    font-family: "Turret Road", sans-serif;
+}
+.formulario--opcion{
+    background-color: var(--negro);
+    border: 1px solid var(--pistache);
+    color: var(--pistache);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.formulario--opcion:hover{
+    color: var(--negro);
+    background-color: var(--pistache);
+    transition: .3s ease;
+    border: 1px solid var(--pistache);
+}
+@media (min-width: 768px ){
+    .items{
+        display: flex;
+        justify-content: end;
+    }
+    .formulario--pedido{
+        display: flex;
+        justify-content: end;
+    }
+}
+.nav-item{
+    padding: 1rem;
+}
+.input{
+    padding: 1rem 2rem;
+}
+.input[type="radio"] {
+    display: none; /* Oculta el input de tipo radio */
+}
+.input[type="radio"] + label::before {
+    display: flex;
+    content: "";
+    margin-right: 1rem;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0;
+    gap: 1rem;
+    border: 3px solid var(--rojo);
+}
+.input[type="radio"]:checked + label::before{
+    background-color: var(--pistache);
+    border: 2px solid var(--rojo);
+}
+.input[type="number"]{
+    background-color: var(--negro);
+    color: var(--pistache);
+    border: 2px solid var(--pistache);
+}
+.input[type="number"]:hover{
+    background-color: var(--pistache);
+    border: 2px solid var(--rojo);
+    color: var(--negro);
+    font-weight: bold;
 }
