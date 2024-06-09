@@ -98,8 +98,6 @@ p{
     background-color: var(--negro);
     margin-top: 3rem;
     gap: 1rem;
-    grid-template-columns: repeat(2, 1fr);
-
 }
 @media (min-width: 768px){
     .barra{
