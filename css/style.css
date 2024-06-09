@@ -99,11 +99,11 @@ p{
     margin-top: 3rem;
     gap: 1rem;
 }
-@media (min-width: 768px){
-    .barra{
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
+/*@media (min-width: 768px){*/
+/*    .barra{*/
+/*        grid-template-columns: repeat(2, 1fr);*/
+/*    }*/
+/*}*/
 .navegacion{
     display: flex;
     flex-direction: column;
