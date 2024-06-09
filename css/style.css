@@ -17,8 +17,8 @@
     --blanco: rgb(255, 250, 250);
 }
 html{
-    box-sizing: border-box;
-    font-size: 82.5%;
+    /*box-sizing: border-box;*/
+    /*font-size: 82.5%;*/
 }
 *, *:before,*:after{
     box-sizing: inherit;
