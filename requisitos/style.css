@@ -26,12 +26,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    /*background-image: linear-gradient(to top, var(--negro) 0%,var(--rojofondo) 90%);*/
-    /*background-repeat: initial;*/
     background-color: var(--negro);
-    /*font-family: "Turret Road", sans-serif;*/
-    /*font-optical-sizing: auto;*/
-    /*font-style: normal;*/
     color: var(--blanco);
     text-transform: capitalize;
 }
