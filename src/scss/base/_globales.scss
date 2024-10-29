@@ -14,14 +14,15 @@ body {
   font-family: v.$fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
-  color: v.$negro;
+  color: v.$blanco;
   font-size: 2rem;
+  background-color: v.$negro;
+  text-transform: capitalize;
   &.overflow-hidden{
     overflow: hidden;
   }
 }
 p {
-  color: v.$negro;
   line-height: 1.5;
 }
 .contenedor {
